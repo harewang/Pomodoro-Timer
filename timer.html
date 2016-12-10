@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Timer</title>
+<link rel="stylesheet" href="timer.css">
+<script src="timer.js"></script>
+</head>
+<body>
+    <div id="main">
+        <h1>时间管理计时器</h1>
+        <!-- 说明 -->
+        <div id="introduce">
+            <h2>使用说明</h3>
+            <p>1.工作计时的计时器为绿色，休息计时则为红色</p>
+            <p>2.一次工作计时结束后次数统计加一并开始一次休息计时，以此类推</p>
+            <p>3.点击钟的主体来开始或结束计时，中止计时则不统计该次计时</p>
+            <p>4.点击加号或减号来调节一次计时时间，范围在1分钟至60分钟内</p>
+            <p>----你可以将它当做一个番茄钟来使用----</p>
+        </div>
+
+        <!-- 计时器 -->
+        <div class="timer-wrapper">
+            <div id="timer">
+                <span class="s"></span>
+                <p>05:00</p>     <!-- time -->
+            </div>
+        </div>
+        
+        <!-- 次数总计 -->
+        <div id="details">
+            <p class="break">已休息<span>0</span>次</p>
+            <p class="session">已工作<span>0</span>次</p>
+        </div>
+
+        <!-- 间隔设置 -->
+        <div id="setting">
+            <div class="break setting">
+                休息间隔<div>
+                    <span>-</span><span>3</span><span>+</span>
+                </div>分钟
+            </div>
+            <div class="session setting">
+                工作间隔<div>
+                    <span>-</span><span>3</span><span>+</span>
+                </div>分钟
+            </div>
+        </div>
+    </div>
+</body>
+</html>

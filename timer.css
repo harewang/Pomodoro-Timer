@@ -1,0 +1,131 @@
+* {margin: 0; padding: 0; font-size: 1em; font-family: '微软雅黑'}
+html,body {height: 100%;}
+body {
+    background: #242729;
+}
+#main {
+    width: 1200px;
+    margin: 0 auto;
+    height: 100%;
+    position: relative;
+    text-align: center;
+}
+#main h1 {
+    text-align: center;
+    color: white;
+    font-size: 4em;
+    font-weight: normal;
+    letter-spacing: 0.2em;
+    padding: 30px;
+}
+
+.timer-wrapper {
+    width: 312px;
+    height: 312px;
+    border: 3px solid #eef;
+    border-radius: 50%;
+    left: 5px;
+    margin: 0 auto;
+    overflow: hidden;
+    position: relative;
+}
+#timer {
+    cursor: pointer;
+    width: 300px;
+    height: 300px;
+    border: 1px solid #242729;
+    border-radius: 50%;
+    position: absolute;
+    top: 5px;
+    left: 5px;
+    margin: 0 auto;
+    overflow: hidden;
+}
+#timer span {
+    display: block;
+    height: 1px;
+    width: 100%;
+    z-index: -1;
+}
+#timer span.s {
+    background: #31A52E;
+}
+#timer span.b {
+    background: #F52936;
+}
+#timer p {
+    color: white;
+    font-size: 3em;
+    position: absolute;
+    top: 150px;
+    left: 50%;
+    margin-left: -62px;
+    text-align: center;
+}
+
+#details {
+    width: 310px;
+    height: 100px;
+    position: relative;
+    margin: 0 auto;
+    margin-top: 30px;
+}
+#details p {
+    position: absolute;
+    color: white;
+    font-size: 1.5em;
+}
+#details p span {
+    margin: 0 8px;
+}
+#details p.break {
+    left: 0;
+}
+#details p.session {
+    right: 0;
+}
+
+#setting {
+    position: absolute;
+    top: 150px;
+    right: 0;
+    width: 200px;
+    height: 300px;
+}
+#setting div.setting {
+    color: white;
+    margin: 50px 0;
+    font-size: 20px;
+    letter-spacing: 0.3em;
+    text-align: center;
+}
+#setting div.setting div {
+    margin: 9px 0;
+    font-size: 29px;
+}
+#setting div.setting div span {
+    padding: 0 15px;
+    cursor: pointer;
+}
+#setting div.setting div span:nth-child(2) {
+    color: #D1901C;
+    cursor: auto;
+}
+
+#introduce {
+    width: 300px;
+    height: 300px;
+    position: absolute;
+    left: 20px;
+    color: white;
+    letter-spacing: 2px;
+    text-align: left;
+}
+#introduce h2 {
+    padding: 0 0 5px 15px;
+    font-weight: normal;
+    font-size: 20px;
+}
+#introduce p {
+    padding-bottom: 3px;
+}
